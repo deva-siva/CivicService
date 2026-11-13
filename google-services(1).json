@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "783085905102",
+    "project_id": "publicservice-31c9e",
+    "storage_bucket": "publicservice-31c9e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783085905102:android:3b74d691f7b2f7a5b91c9f",
+        "android_client_info": {
+          "package_name": "com.Gov.civicservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783085905102-vnjg8kr0494f0daso3fsoo5aeomeu20r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQs34nL1m7Kn73v4zg-lCunK0z5Rhh9xI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783085905102-vnjg8kr0494f0daso3fsoo5aeomeu20r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

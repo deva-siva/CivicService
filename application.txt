@@ -1,0 +1,82 @@
+
+Develop a mobile application for civic grievance management system where citizens can report public utility
+issues such as street light failure, water pipe leakage, drainage blockage, road damage, and
+sanitation problems.
+The system must use AI-assisted text processing (NLP) and metadata (time, date, location) to
+automatically classify complaints, assign priority, route them to the correct department, track
+resolution status, and escalate unresolved complaints.
+AI should assist decision-making, not fully automate it.
+USER ROLES:
+1. Citizen (Public User)
+2. Admin / Authority
+CORE FEATURES (MANDATORY):
+1. User Authentication
+• Citizen registration & login (email / mobile)
+• Secure login & logout
+2. Complaint Submission
+• Complaint title
+• Detailed description (free text)
+• Image upload (photo evidence only – NO image AI)
+• Auto-capture:
+o Date
+o Time
+o Location (browser GPS)
+• Issue categories:
+o Street light
+o Water leakage
+o Drainage
+o Road / potholesGarbage / sanitation
+o Others
+3. AI-Based Text Classification (IMPORTANT)
+• Use NLP to analyze complaint description
+• Automatically predict:
+o Issue category
+o Responsible department
+• Use lightweight ML only (TF-IDF + Logistic Regression / SVM / spaCy)
+• Admin override must be possible
+• NO heavy BERT fine-tuning required
+4. Priority Scoring System
+• Priority based on:
+o Issue type
+o Complaint age
+o Repeated complaints from same location
+o Keywords in text
+• Output:
+o Low / Medium / High priority
+o Numeric score (0–100)
+5. Duplicate Complaint Detection
+• Detect similar complaints using text similarity
+• Flag complaints from same location with similar description
+• No image comparison needed
+6. Complaint Status Tracking
+• Status flow:
+Submitted → Assigned → In Progress → Resolved → Closed / Escalated
+• Citizen can view complaint ID and current status
+7. SLA & Escalation
+• Define resolution time per issue type
+• Auto-escalate if no update within SLA
+• Escalation visible in admin panel
+8. Admin DashboardView all complaints
+• Filter by category, priority, location, status
+• Assign complaints to departments
+• Update status and resolution notes
+• Close or reopen complaints
+9. Analytics & Reports
+• Complaints by category
+• Complaints by area
+• Pending vs resolved count
+• Average resolution time
+• Simple charts (bar / pie)
+10. Image Handling (NO AI)
+• Image stored and shown to admin
+• Image metadata (time/location) used only for validation
+• NO image recognition / CNN in this phase
+
+• Image-based severity detection
+
+• Multilingual support
+TECH STACK:
+• Frontend: Flutter
+• Backend: Python (Django) 
+• Database: sqlite3
+• AI: Scikit-learn, spaCy / NLTK

@@ -1,0 +1,52 @@
+/run/media/dheena/Leave you files/AI-Assisted Smart Grievance & Civic Issue Resolution Web Platform/application.txt
+
+build the application 
+admin and user portal admin add staffs and roles ad permiisons 
+
+then read the complete application and finish 
+
+for ai features use groq
+
+
+
+for ui refernce /run/media/dheena/Leave you files/AI-Assisted Smart Grievance & Civic Issue Resolution Web Platform/ui_design
+
+
+then apppliation need to be support for all languages in india use localization 
+
+
+read the application.txt then build this mobile app
+
+
+implement notification service and google login then i want app tour 
+
+use firebase for google login 
+
+
+flutterfire configure --project=publicservice-31c9e
+
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+// ...
+
+await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+);
+
+
+use the firebase for  google login and notification
+
+for backend use python django make venv 
+for frontend use flutter
+
+
+is everything done
+Read application.txt
+Let me do a full audit of what exists vs what's needed:
+
+Bash List all project files
+IN
+find "/run/media/dheena/Leave you files/AI-Assisted Smart Grievance & Civic Issue Resolution Web Platform" -type f | grep -v __pycache__ | grep -v .git | sort
+
+OUT

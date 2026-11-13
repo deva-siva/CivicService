@@ -1,0 +1,11 @@
+import os
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'grievance_platform.settings')
+application = get_wsgi_application()
+
+try:
+    from utils.keep_alive import start_pinger
+    start_pinger()
+except ImportError:
+    pass
